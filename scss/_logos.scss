@@ -1,0 +1,94 @@
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo_link {
+    display: flex;
+    width: 375px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_hillel {
+    background-color: #1C4280;
+}
+
+.link_wannabiz {
+    background-color: #143646;
+}
+
+.link_tapgerine {
+    background-color: #F48B30;
+}
+
+.link_3dlook {
+    background-color: #9E4DC3;
+}
+
+.link_orangear {
+    background-color: #FD9339;
+}
+
+.link_adtelligent {
+    background-color: #E2E2E4;
+}
+
+.link_clickky {
+    background-color: #C71C36;
+}
+
+.link_link_eco-leasing {
+    background-color: #DCF3F9;
+}
+
+.link_ingratek {
+    background-color: #EAEAEA;
+}
+
+.link_city-park {
+    background-color: #282240;
+}
+
+.link_artprint {
+    background-color: #1D4568;
+}
+
+.link_ultimatecard {
+    background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    .hide_mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo_link {
+        width: 256px;
+    }
+
+    .logos {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo_link {
+        width: 360px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper_logos {
+        width: 1720px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .logo_link {
+        width: 430px;
+    }
+}
