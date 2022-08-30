@@ -24,6 +24,16 @@
     content: url(../images/technical/Arrow.svg);
 }
 
+.services_headding_hover:hover {
+    .services_headding:after {
+        content: url(../images/technical/Arrow_hover.svg);
+    }
+}
+
+.services_headding:hover {
+    color: #F0145A;
+}
+
 .services_sub_headding {
     @include font (30px, 37px);
     @include text-gradient(left, #F0145A, #EF8080);
@@ -32,13 +42,6 @@
 
 .serv-block {
     @include margin-y (30px);
-    &.serv-img {
-            display: inline-block;
-            background-color: #fff;
-            padding: 14px;
-            border-radius: 24px;
-            @include margin-y (30px);
-        }
 
     & h4 {
         @include font (22px, 27px);
@@ -52,6 +55,14 @@
         color: $secondaryColor;
         margin: 0;
     }
+}
+
+.serv-img {
+    display: inline-block;
+    background-color: #fff;
+    padding: 14px;
+    border-radius: 24px;
+    @include margin-y (30px);
 }
 
 .services::before {
@@ -78,4 +89,53 @@
     border-bottom-right-radius: 12px;
 }
 
+@media (min-width:768px) {
+    .wrapper {
+        width: 648px;
+    }
 
+    .services_sub_headding {
+        margin-bottom: 60px;
+    }
+
+    .serv-blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .serv-block {
+        width: 294px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        width: 904px;
+    }
+
+    .serv-block {
+        width: 261px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        width: 1320px;
+    }
+
+    .serv-block {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        width: 1600px;
+    }
+
+    .serv-block {
+        width: 493px;
+    }
+}
