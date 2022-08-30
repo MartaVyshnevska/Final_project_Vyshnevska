@@ -1,0 +1,81 @@
+.services {
+    background-image: $bgGradient;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    width: 315px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services_headding {
+    @include font (14px, 17px);
+    text-transform: uppercase;
+    color: $baseColor;
+    @include margin-y (10px);
+}
+
+.services_headding:after {
+    content: url(../images/technical/Arrow.svg);
+}
+
+.services_sub_headding {
+    @include font (30px, 37px);
+    @include text-gradient(left, #F0145A, #EF8080);
+    @include margin-y (30px);
+}
+
+.serv-block {
+    @include margin-y (30px);
+    &.serv-img {
+            display: inline-block;
+            background-color: #fff;
+            padding: 14px;
+            border-radius: 24px;
+            @include margin-y (30px);
+        }
+
+    & h4 {
+        @include font (22px, 27px);
+        @include margin-y (15px);
+        color: $baseColor;
+    }
+
+    & p {
+        @include font (16px, 26px);
+        font-weight: 400;
+        color: $secondaryColor;
+        margin: 0;
+    }
+}
+
+.services::before {
+    content: "";
+    background-color: #CACADB;
+    height: 10px;
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.services::after {
+    content: "";
+    background-color: #E7E7F2;
+    height: 10px;
+    width: calc(100% - 80px);
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+

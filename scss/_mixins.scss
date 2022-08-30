@@ -1,0 +1,19 @@
+@mixin font ($fs, $lh) {
+    font-size: $fs;
+    @if ($fs > $lh) {
+        line-height: $fs; 
+    } @else {
+        line-height: $lh;
+    }
+}
+
+@mixin text-gradient($dir, $from, $to) {
+    background: -webkit-linear-gradient($dir, $from, $to);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin margin-y ($size) {
+    margin-top: 0;
+    margin-bottom: $size;
+}
