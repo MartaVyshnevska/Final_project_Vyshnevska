@@ -503,6 +503,7 @@ main {
 .logos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logo_link {
@@ -569,9 +570,6 @@ main {
 @media (min-width: 1024px) {
   .logo_link {
     width: 256px;
-  }
-  .logos {
-    justify-content: center;
   }
 }
 @media (min-width: 1440px) {

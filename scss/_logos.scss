@@ -1,6 +1,7 @@
 .logos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .logo_link {
@@ -68,10 +69,6 @@
 @media (min-width: 1024px) {
     .logo_link {
         width: 256px;
-    }
-
-    .logos {
-        justify-content: center;
     }
 }
 
